@@ -6,9 +6,6 @@ function App() {
     <>
       <NavBar />
       <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
     </>
   );
 }
