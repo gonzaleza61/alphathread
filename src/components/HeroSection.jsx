@@ -39,8 +39,8 @@ const HeroSection = () => {
       </video>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
         {/* Your hero section content goes here */}
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our Website</h1>
-        <p className="text-lg">Learn more about our services...</p>
+        <h1 className="text-4xl font-bold mb-4">AlphaThreaded</h1>
+        <p className="text-lg">Blah Blah Blah Blah...</p>
       </div>
     </div>
   );
