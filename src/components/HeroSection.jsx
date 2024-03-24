@@ -7,7 +7,10 @@ const HeroSection = () => {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="../assets/videos/herovideo.mp4" type="video/mp4" />
+        <source
+          src="https://alphathread.vercel.app/videos/herovideo.mp4"
+          type="video/mp4"
+        />
         {/* Add additional video sources for compatibility */}
         Your browser does not support the video tag.
       </video>
