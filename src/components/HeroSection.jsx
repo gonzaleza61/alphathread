@@ -1,10 +1,33 @@
+import { useRef, useEffect } from "react";
+
 const HeroSection = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const playPromise = video.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then((_) => {
+          // Autoplay started
+        })
+        .catch((error) => {
+          // Autoplay was prevented
+          // Perform fallback or show a play button
+        });
+    }
+  }, []);
+
   return (
     <div className="relative h-screen">
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
