@@ -13,7 +13,7 @@ const NavBar = () => {
     <>
       <FlyoutNav />
       <div
-        className="relative min-h-screen"
+        className="relative"
         style={{
           backgroundImage: "url(/imgs/random/12.jpg)",
           backgroundSize: "cover",
