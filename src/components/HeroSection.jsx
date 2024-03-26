@@ -40,7 +40,10 @@ const HeroSection = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
         {/* Your hero section content goes here */}
         <h1 className="text-4xl font-bold mb-4">AlphaThreaded</h1>
-        <p className="text-lg">Blah Blah Blah Blah...</p>
+        <p className="text-lg">
+          Houston's Contractor's Source for Tooling, Fasteners and Jobsite
+          Supplies.
+        </p>
       </div>
     </div>
   );
