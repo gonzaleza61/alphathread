@@ -8,7 +8,7 @@ export default function AboutUs() {
           <div className="flex flex-col m-4 bg-white">
             <h1 className="text-center">About Us</h1>
           </div>
-          <div className="flex flex-wrap justify-between bg-white">
+          <div className="flex flex-wrap justify-between gap-4 bg-white">
             <Card />
             <Card />
             <Card />
