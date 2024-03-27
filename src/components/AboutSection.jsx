@@ -1,4 +1,5 @@
 import Card from "./ImageCard";
+import AboutOneImage from "../assets/images/aboutone.jpg";
 
 export default function AboutUs() {
   return (
@@ -9,10 +10,10 @@ export default function AboutUs() {
             <h1 className="text-center">About Us</h1>
           </div>
           <div className="flex flex-wrap justify-between gap-4 bg-white">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card imgSrc={AboutOneImage} />
+            <Card imgSrc={AboutOneImage} />
+            <Card imgSrc={AboutOneImage} />
+            <Card imgSrc={AboutOneImage} />
           </div>
         </div>
       </section>
