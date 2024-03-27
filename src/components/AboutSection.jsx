@@ -10,10 +10,10 @@ export default function AboutUs() {
             <h1 className="text-center">About Us</h1>
           </div>
           <div className="flex flex-wrap justify-between gap-4 bg-white">
-            <Card imgSrc={AboutOneImage} />
-            <Card imgSrc={AboutOneImage} />
-            <Card imgSrc={AboutOneImage} />
-            <Card imgSrc={AboutOneImage} />
+            <Card imgSrc={AboutOneImage} title="center" />
+            <Card imgSrc={AboutOneImage} title="center" />
+            <Card imgSrc={AboutOneImage} title="center" />
+            <Card imgSrc={AboutOneImage} title="center" />
           </div>
         </div>
       </section>

@@ -1,11 +1,10 @@
-import AboutOneImage from "../assets/images/aboutone.jpg";
 import PropTypes from "prop-types";
 
-export default function Card({ imgSrc }) {
+export default function Card({ imgSrc, title }) {
   return (
     <>
       <div
-        className="flex-1 h-full"
+        className="flex-1 h-full text-center content-center min-w-64"
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundSize: "cover",
@@ -13,7 +12,7 @@ export default function Card({ imgSrc }) {
           height: "500px",
         }}
       >
-        card
+        {title}
       </div>
     </>
   );
@@ -21,4 +20,5 @@ export default function Card({ imgSrc }) {
 
 Card.propTypes = {
   imgSrc: PropTypes.string.isRequired, // Require imgSrc prop to be a string
+  title: PropTypes.string.isRequired,
 };
