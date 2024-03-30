@@ -4,15 +4,17 @@ export default function Card({ imgSrc, title }) {
   return (
     <>
       <div
-        className="h-full content-center"
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "500px",
+          justifyContent: "center",
+          alignContent: "center",
+          textAlign: "center",
         }}
       >
-        <h2 className="text-center content-center">{title}</h2>
+        <h2>{title}</h2>
       </div>
     </>
   );
