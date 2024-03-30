@@ -4,16 +4,15 @@ export default function Card({ imgSrc, title }) {
   return (
     <>
       <div
-        className="text-center content-center"
+        className="content-center"
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "500px",
-          minWidth: "20px",
         }}
       >
-        {title}
+        <h2 className="text-center">{title}</h2>
       </div>
     </>
   );
