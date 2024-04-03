@@ -24,8 +24,9 @@ export default function Card({ imgSrc, title }) {
         <h2 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-2/4 font-bold text-white">
           {title}
         </h2>
+
         <img
-          className="h-full w-full object-cover hover:opacity-55"
+          className="h-full w-full object-cover hover:opacity-40 "
           src={imgSrc}
         />
       </div>
