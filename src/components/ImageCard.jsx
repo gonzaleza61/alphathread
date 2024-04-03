@@ -20,11 +20,14 @@ export default function Card({ imgSrc, title }) {
           },
         }}
       > */}
-      <div className="h-[550px] bg-red-50 relative text-center">
-        <h2 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-2/4">
+      <div className="h-[550px] bg-black relative text-center">
+        <h2 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-2/4 font-bold text-white">
           {title}
         </h2>
-        <img className="h-full w-full object-cover" src={imgSrc} />
+        <img
+          className="h-full w-full object-cover hover:opacity-55"
+          src={imgSrc}
+        />
       </div>
       {/* </div> */}
     </>
