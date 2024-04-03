@@ -3,19 +3,30 @@ import PropTypes from "prop-types";
 export default function Card({ imgSrc, title }) {
   return (
     <>
-      <div
+      {/* <div
+        className="p-4"
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "500px",
+          height: "600px",
           justifyContent: "center",
           alignContent: "center",
           textAlign: "center",
+          transition: "opacity: 0.3s",
+          opacity: 1,
+          ":hover": {
+            opacity: 0.8,
+          },
         }}
-      >
-        <h2>{title}</h2>
+      > */}
+      <div className="h-[550px] bg-red-50 relative text-center">
+        <h2 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-2/4">
+          {title}
+        </h2>
+        <img className="h-full w-full object-cover" src={imgSrc} />
       </div>
+      {/* </div> */}
     </>
   );
 }
