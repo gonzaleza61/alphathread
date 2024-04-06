@@ -8,7 +8,7 @@ export default function Card({ imgSrc, title }) {
           {title}
         </h2>
         <div
-          className="h-full w-full"
+          className="h-full w-full hover:opacity-30"
           style={{
             backgroundImage: `url(${imgSrc})`,
             backgroundPosition: "center",
