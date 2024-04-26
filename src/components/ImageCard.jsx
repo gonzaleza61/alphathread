@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Card({ imgSrc, title }) {
+export default function Card({ imgSrc, title, description }) {
   return (
     <>
       <div className="h-[550px] bg-black relative text-center">
@@ -14,7 +14,11 @@ export default function Card({ imgSrc, title }) {
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <div>
+            <p>{description}</p>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -23,4 +27,5 @@ export default function Card({ imgSrc, title }) {
 Card.propTypes = {
   imgSrc: PropTypes.string.isRequired, // Require imgSrc prop to be a string
   title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };

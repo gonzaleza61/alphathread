@@ -12,10 +12,26 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="grid grid-rows-4 grid-cols-1 justify-between gap-4  lg:grid-cols-4 lg:grid-rows-1 sm:grid-rows-2 sm:grid-cols-2">
-            <Card imgSrc={AboutOneImage} title={CardInfo.CardOne.title} />
-            <Card imgSrc={AboutOneImage} title={CardInfo.CardTwo.title} />
-            <Card imgSrc={AboutOneImage} title={CardInfo.CardThree.title} />
-            <Card imgSrc={AboutOneImage} title={CardInfo.CardFour.title} />
+            <Card
+              imgSrc={AboutOneImage}
+              title={CardInfo.CardOne.title}
+              description={CardInfo.CardOne.description}
+            />
+            <Card
+              imgSrc={AboutOneImage}
+              title={CardInfo.CardTwo.title}
+              description={CardInfo.CardTwo.description}
+            />
+            <Card
+              imgSrc={AboutOneImage}
+              title={CardInfo.CardThree.title}
+              description={CardInfo.CardThree.description}
+            />
+            <Card
+              imgSrc={AboutOneImage}
+              title={CardInfo.CardFour.title}
+              description={CardInfo.CardFour.description}
+            />
           </div>
         </div>
       </section>
